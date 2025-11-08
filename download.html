@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BetOnline — Download & Install</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .instr {
+      background:#fff;
+      padding:22px;
+      border-radius:8px;
+      box-shadow:0 4px 14px rgba(0,0,0,0.06);
+      margin-top:18px;
+    }
+    .instr h3{margin-top:0; color:var(--accent)}
+    .section-title { font-weight:700; margin-top:18px; }
+    .muted { color:var(--muted); }
+    .kbd {display:inline-block; padding:6px 10px; border-radius:6px; background:#f3f3f3; border:1px solid #e9e9e9; font-weight:700}
+    .image-row { display:flex; gap:14px; flex-wrap:nowrap; justify-content:center; margin-top:14px; align-items:flex-start; }
+    .image-row img {
+      flex: 0 0 300px;
+      max-width: 340px;
+      width:100%;
+      height:auto;
+      object-fit:contain;
+      border-radius:12px;
+      box-shadow:0 8px 22px rgba(0,0,0,0.12);
+    }
+    @media (max-width:900px){
+      .image-row { flex-direction:column; gap:16px; align-items:center; }
+      .image-row img { max-width:560px; width:92%; }
+    }
+    .inline-cta { margin-top:12px; display:inline-flex; gap:10px; align-items:center; }
+    .open-btn {
+      background:var(--accent);
+      color:#fff;
+      border:none;
+      padding:10px 16px;
+      border-radius:8px;
+      font-weight:700;
+      font-size:14px;
+      cursor:pointer;
+      box-shadow:0 6px 14px rgba(0,0,0,0.12);
+      text-decoration:none;
+    }
+    .detect-banner{
+      background:#fff6ea;
+      border:1px solid #f5e6cf;
+      padding:12px;
+      border-radius:8px;
+      margin-bottom:12px;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">BET<span style="color:var(--accent)">ONLINE</span></div>
+    <nav class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="#">SUPPORT</a>
+      <a href="#" class="cta-join">LOGIN</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.42)), url('https://picsum.photos/1300/380?random=2')">
+      <div class="eyebrow center">DOWNLOAD / INSTALL GUIDE</div>
+      <h1>Install BetOnline</h1>
+      <p>Follow the instructions below for your device.</p>
+    </section>
+
+    <div class="instr" id="instruction-area">
+      <div id="detected" class="detect-banner" style="display:none"></div>
+
+      <!-- Safari instructions -->
+      <div id="ios-safari" style="display:none">
+        <h3>iOS (Safari) — Add to Home Screen</h3>
+        <p class="section-title">Step 1 — Open this page in <span class="kbd">Safari</span></p>
+        <p class="muted">Tap <strong>Download</strong> below to open the BetOnline web app in Safari, then follow the steps.</p>
+        <div class="inline-cta">
+          <a id="openAppBtnSafari" class="open-btn" href="#" target="_blank" rel="noopener">Download</a>
+        </div>
+        <p class="section-title">Step 2 — Tap the Share button</p>
+        <div class="image-row"><img src="images/safari1.jpeg" alt="Safari Share Menu"></div>
+        <p class="section-title">Step 3 — Tap <span class="kbd">Add to Home Screen</span></p>
+        <div class="image-row"><img src="images/safari2.jpeg" alt="Add to Home Screen Option"></div>
+        <p class="section-title">Step 4 — Tap <span class="kbd">Add</span></p>
+        <div class="image-row"><img src="images/safari3.png" alt="Add to Home Screen Confirm"></div>
+      </div>
+
+      <!-- Chrome instructions -->
+      <div id="ios-chrome" style="display:none">
+        <h3>iOS (Chrome) — Add to Home Screen</h3>
+        <p class="section-title">Step 1 — Open this page in <span class="kbd">Chrome</span></p>
+        <p class="muted">Tap <strong>Download</strong> below to open the BetOnline web app in Chrome, then follow the steps.</p>
+        <div class="inline-cta">
+          <a id="openAppBtnChrome" class="open-btn" href="#" target="_blank" rel="noopener">Download</a>
+        </div>
+        <p class="section-title">Step 2 — Tap the three-dot menu or Share icon</p>
+        <div class="image-row"><img src="images/chrome1.jpeg" alt="Chrome Share Menu"></div>
+        <p class="section-title">Step 3 — Choose <span class="kbd">Add to Home Screen</span></p>
+        <div class="image-row"><img src="images/chrome2.jpeg" alt="Chrome Add Option"></div>
+        <p class="section-title">Step 4 — Tap <span class="kbd">Add</span></p>
+        <div class="image-row"><img src="images/chrome3.jpeg" alt="Chrome Add Confirm"></div>
+      </div>
+
+      <!-- Android instructions -->
+      <div id="android-block" style="display:none">
+        <h3>Android — Install APK</h3>
+        <p class="section-title">Step 1 — Tap <span class="kbd">Download APK</span> below</p>
+        <div class="inline-cta">
+          <a id="apkBtn" class="open-btn" href="#" target="_blank" rel="noopener">Download APK</a>
+        </div>
+        <p class="section-title">Step 2 — Open the file</p>
+        <p class="muted">Once downloaded, open your <strong>Downloads</strong> folder or tap the notification.</p>
+        <p class="section-title">Step 3 — Allow installation</p>
+        <p class="muted">If prompted, allow installation from unknown sources: <em>Settings → Apps → Special Access → Install unknown apps</em>.</p>
+        <p class="section-title">Step 4 — Launch BetOnline</p>
+        <p class="muted">Once installed, open the BetOnline app from your app drawer and enjoy!</p>
+      </div>
+
+      <!-- fallback -->
+      <div id="universal-block" style="display:none">
+        <h3>Browser not detected — Showing all instructions</h3>
+        <p>We couldn’t detect your browser. Below are Safari, Chrome, and Android instructions for reference.</p>
+        <div id="ios-safari-copy"></div>
+        <div id="ios-chrome-copy"></div>
+        <div id="android-copy"></div>
+      </div>
+    </div>
+
+    <div style="height:28px"></div>
+    <p class="center"><a class="btn btn-outline" href="index.html">Back to Landing</a></p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div><h4>Support</h4><p class="muted">Contact us · FAQ · Help</p></div>
+      <div><h4>Legal</h4><p class="muted">Privacy · Terms · Responsible Gaming</p></div>
+      <div><h4>Company</h4><p class="muted">About · Careers · News</p></div>
+      <div><h4>Follow</h4><p class="muted">Twitter · Facebook · Instagram</p></div>
+    </div>
+  </footer>
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const APP_URL = params.get('appurl') || location.href;
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const ua = navigator.userAgent || '';
+    const detected = document.getElementById('detected');
+
+    const isAndroid = /Android/i.test(ua);
+    const isIOS = /iPhone|iPad|iPod/i.test(ua);
+    const isSafari = /^((?!chrome|android).)*safari/i.test(ua);
+    const isChrome = /Chrome|CriOS/i.test(ua);
+
+    const safariBlock = document.getElementById('ios-safari');
+    const chromeBlock = document.getElementById('ios-chrome');
+    const androidBlock = document.getElementById('android-block');
+    const universalBlock = document.getElementById('universal-block');
+
+    if (isAndroid) {
+      androidBlock.style.display = 'block';
+      detected.style.display = 'block';
+      detected.textContent = 'Device detected: Android — follow APK installation instructions below.';
+    } else if (isIOS && isSafari) {
+      safariBlock.style.display = 'block';
+      detected.style.display = 'block';
+      detected.textContent = 'Browser detected: Safari (iOS) — follow Safari instructions below.';
+    } else if (isIOS && isChrome) {
+      chromeBlock.style.display = 'block';
+      detected.style.display = 'block';
+      detected.textContent = 'Browser detected: Chrome (iOS) — follow Chrome instructions below.';
+    } else if (isSafari && !isIOS) {
+      safariBlock.style.display = 'block';
+      detected.style.display = 'block';
+      detected.textContent = 'Browser detected: Safari (desktop) — showing Safari instructions.';
+    } else if (isChrome && !isIOS) {
+      chromeBlock.style.display = 'block';
+      detected.style.display = 'block';
+      detected.textContent = 'Browser detected: Chrome (desktop) — showing Chrome instructions.';
+    } else {
+      universalBlock.style.display = 'block';
+      detected.style.display = 'block';
+      detected.textContent = 'Browser not recognized — showing all instructions for preview.';
+      document.getElementById('ios-safari-copy').innerHTML = safariBlock.innerHTML;
+      document.getElementById('ios-chrome-copy').innerHTML = chromeBlock.innerHTML;
+      document.getElementById('android-copy').innerHTML = androidBlock.innerHTML;
+    }
+
+    // Handle open/download buttons
+    function openApp(e){
+      e.preventDefault();
+      const url = APP_URL;
+      if (/Mobi|Android|iPhone|iPad|iPod/i.test(ua)) {
+        window.open(url, '_blank');
+      } else {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(url);
+          alert('Link copied! Open this on your phone’s browser.');
+        }
+        window.open(url, '_blank');
+      }
+    }
+
+    const safariBtn = document.getElementById('openAppBtnSafari');
+    const chromeBtn = document.getElementById('openAppBtnChrome');
+    if (safariBtn) safariBtn.addEventListener('click', openApp);
+    if (chromeBtn) chromeBtn.addEventListener('click', openApp);
+  });
+</script>
+</body>
+</html>

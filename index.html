@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BetOnline — Play Poker & Download App</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero{background-image: linear-gradient(180deg, rgba(0,0,0,0.34), rgba(0,0,0,0.46)), url('https://picsum.photos/1400/500?blur=3')}
+    .device img{background:#efefef; border-radius:8px; padding:8px}
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="brand">BET<span style="color:var(--accent)">ONLINE</span></div>
+    <nav class="nav-links">
+      <a href="#">SPORTS</a>
+      <a href="#">LIVE BETTING</a>
+      <a href="#">CASINO</a>
+      <a href="#" style="border-bottom:3px solid var(--accent); padding-bottom:6px">POKER</a>
+      <a href="#" class="cta-join">JOIN</a>
+    </nav>
+  </header>
+
+  <div class="leftbar" aria-hidden="true">
+    <div class="lb-item" title="Menu"><svg viewBox="0 0 24 24"><rect x="3" y="6" rx="1.5" width="18" height="2"/><rect x="3" y="11" rx="1.5" width="18" height="2"/><rect x="3" y="16" rx="1.5" width="18" height="2"/></svg></div>
+    <div class="lb-item" title="Play"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></div>
+    <div class="lb-item" title="Download"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 20h14v-2H5v2zM11 4h2v8h3l-4 4-4-4h3z"/></svg></div>
+    <div class="lb-item" title="Promos"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5zm0 7.5L4.5 7 12 4.5 19.5 7 12 9.5zM2 17v2h20v-2c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2z"/></svg></div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <div class="eyebrow center">♦ ♠ ♣ ♥ FREE TICKETS ♦ ♠ ♣ ♥</div>
+      <h1>100% UP TO $1,000</h1>
+      <p>Play online or download the BetOnline poker app today — designed for mobile. Fast, secure, and packed with promos.</p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="download.html?platform=universal">DOWNLOAD &amp; PLAY</a>
+        <a class="btn btn-outline" href="#">PLAY ONLINE</a>
+      </div>
+    </section>
+
+    <section class="devices" aria-label="Download options">
+      <div class="device">
+        <img src="https://ambui.betonline.ag/amber/img/poker/download-desktop.png" alt="Desktop devices"/>
+        <div class="platforms">
+          <a class="platform-btn" href="download.html?platform=mac">MAC</a>
+          <a class="platform-btn" href="download.html?platform=windows">WINDOWS</a>
+        </div>
+      </div>
+
+      <div class="device">
+        <img src="https://ambui.betonline.ag/amber/img/poker/download-mobile.png" alt="Mobile devices"/>
+        <div class="platforms">
+          <!-- iOS now opens instructions page in same tab (no store link) -->
+          <a class="platform-btn" href="download.html?platform=ios">IOS</a>
+          <!-- Android unchanged / can still open dual or single behavior as before -->
+          <a class="platform-btn" href="#" onclick="openDualAndroid(); return false;">ANDROID</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards" aria-label="promotions">
+      <div class="card">
+        <h3>Bad Beat Jackpot</h3>
+        <p>We're thrilled to unveil an exciting new twist to our Bad Beat Jackpot by stake level — bigger prizes, better play.</p>
+        <div style="margin-top:14px">
+          <a class="btn btn-primary" href="#">LEARN MORE</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Heads-Up Display</h3>
+        <p>HUD displays helpful stats at the table so you can make faster, smarter decisions in real time.</p>
+        <div style="margin-top:14px">
+          <a class="btn btn-primary" href="#">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Quick Links</h4>
+        <p class="muted">About · Rules · Banking · Privacy</p>
+      </div>
+      <div>
+        <h4>Casino</h4>
+        <p class="muted">Play Casino · Blackjack · Slots · Roulette</p>
+      </div>
+      <div>
+        <h4>Sports</h4>
+        <p class="muted">Sportsbook · Betting Odds · Contests</p>
+      </div>
+      <div>
+        <h4>Poker</h4>
+        <p class="muted">Play Poker · Download · Promotions</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Android keeps dual behavior (open APK + instructions)
+    function openDualAndroid(){
+      const APK_URL = 'https://yourdomain.com/path/to/betonline.apk'; // replace
+      const instr = 'download.html?platform=android';
+      // open apk then open instruction page in new tab
+      try { window.open(APK_URL, '_blank', 'noopener'); } catch(e){ location.href = APK_URL; }
+      window.open(instr, '_blank', 'noopener');
+    }
+  </script>
+
+  <script src="main.js"></script>
+</body>
+</html>
