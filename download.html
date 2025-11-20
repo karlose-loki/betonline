@@ -18,39 +18,11 @@
     .muted { color:var(--muted); }
     .kbd {display:inline-block; padding:6px 10px; border-radius:6px; background:#f3f3f3; border:1px solid #e9e9e9; font-weight:700}
     .image-row { display:flex; gap:14px; flex-wrap:nowrap; justify-content:center; margin-top:14px; align-items:flex-start; }
-    .image-row img {
-      flex: 0 0 300px;
-      max-width: 340px;
-      width:100%;
-      height:auto;
-      object-fit:contain;
-      border-radius:12px;
-      box-shadow:0 8px 22px rgba(0,0,0,0.12);
-    }
-    @media (max-width:900px){
-      .image-row { flex-direction:column; gap:16px; align-items:center; }
-      .image-row img { max-width:560px; width:92%; }
-    }
+    .image-row img { flex: 0 0 300px; max-width: 340px; width:100%; height:auto; object-fit:contain; border-radius:12px; box-shadow:0 8px 22px rgba(0,0,0,0.12); }
+    @media (max-width:900px){ .image-row { flex-direction:column; gap:16px; align-items:center; } .image-row img { max-width:560px; width:92%; } }
     .inline-cta { margin-top:12px; display:inline-flex; gap:10px; align-items:center; }
-    .open-btn {
-      background:var(--accent);
-      color:#fff;
-      border:none;
-      padding:10px 16px;
-      border-radius:8px;
-      font-weight:700;
-      font-size:14px;
-      cursor:pointer;
-      box-shadow:0 6px 14px rgba(0,0,0,0.12);
-      text-decoration:none;
-    }
-    .detect-banner{
-      background:#fff6ea;
-      border:1px solid #f5e6cf;
-      padding:12px;
-      border-radius:8px;
-      margin-bottom:12px;
-    }
+    .open-btn { background:var(--accent); color:#fff; border:none; padding:10px 16px; border-radius:8px; font-weight:700; font-size:14px; cursor:pointer; box-shadow:0 6px 14px rgba(0,0,0,0.12); text-decoration:none; }
+    .detect-banner{ background:#fff6ea; border:1px solid #f5e6cf; padding:12px; border-radius:8px; margin-bottom:12px; }
   </style>
 </head>
 <body>
@@ -64,7 +36,7 @@
   </header>
 
   <main class="container">
-    <section class="hero" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.42)), url('/images/beon_bg.png')">
+    <section class="hero" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.42)), url('https://picsum.photos/1300/380?random=2')">
       <div class="eyebrow center">DOWNLOAD / INSTALL GUIDE</div>
       <h1>Install BetOnline</h1>
       <p>Follow the instructions below for your device.</p>
@@ -76,54 +48,67 @@
       <!-- Safari instructions -->
       <div id="ios-safari" style="display:none">
         <h3>iOS (Safari) — Add to Home Screen</h3>
+
         <p class="section-title">Step 1 — Open this page in <span class="kbd">Safari</span></p>
-        <p class="muted">Tap <strong>Download</strong> below to open the BetOnline web app in Safari, then follow the steps.</p>
+        <p class="muted">Tap the <strong>Download</strong> button below to open the BetOnline web-app link in Safari, then follow the steps to Add to Home Screen.</p>
         <div class="inline-cta">
-          <a id="openAppBtnSafari" class="open-btn" href="https://triplew.taghas.com/click/03c48d45/187/654?token1=CLICK_ID" target="_blank" rel="noopener">Download</a>
+          <a id="openAppBtnSafari" class="open-btn" href="#" target="_blank" rel="noopener">Download</a>
         </div>
+
         <p class="section-title">Step 2 — Tap the Share button</p>
         <div class="image-row"><img src="images/safari1.jpeg" alt="Safari Share Menu"></div>
+
         <p class="section-title">Step 3 — Tap <span class="kbd">Add to Home Screen</span></p>
-        <div class="image-row"><img src="images/safari2.jpeg" alt="Add to Home Screen Option"></div>
-        <p class="section-title">Step 4 — Tap <span class="kbd">Add</span></p>
+        <div class="image-row"><img src="images/safari2.png" alt="Add to Home Screen Option"></div>
+
+        <p class="section-title">Step 4 — Confirm</p>
         <div class="image-row"><img src="images/safari3.png" alt="Add to Home Screen Confirm"></div>
       </div>
 
       <!-- Chrome instructions -->
-      <div id="ios-chrome" style="display:none">
+      <div id="ios-chrome" style="display:none; margin-top:22px">
         <h3>iOS (Chrome) — Add to Home Screen</h3>
+
         <p class="section-title">Step 1 — Open this page in <span class="kbd">Chrome</span></p>
-        <p class="muted">Tap <strong>Download</strong> below to open the BetOnline web app in Chrome, then follow the steps.</p>
+        <p class="muted">Tap the <strong>Download</strong> button below to open the BetOnline web-app link in Chrome, then follow the steps to Add to Home Screen.</p>
         <div class="inline-cta">
           <a id="openAppBtnChrome" class="open-btn" href="#" target="_blank" rel="noopener">Download</a>
         </div>
-        <p class="section-title">Step 2 — Tap the three-dot menu or Share icon</p>
-        <div class="image-row"><img src="images/chrome1.jpeg" alt="Chrome Share Menu"></div>
+
+        <p class="section-title">Step 2 — Tap the three-dot menu / share</p>
+        <div class="image-row"><img src="images/chrome1.png" alt="Chrome Share Menu"></div>
+
         <p class="section-title">Step 3 — Choose <span class="kbd">Add to Home Screen</span></p>
-        <div class="image-row"><img src="images/chrome2.jpeg" alt="Chrome Add Option"></div>
-        <p class="section-title">Step 4 — Tap <span class="kbd">Add</span></p>
-        <div class="image-row"><img src="images/chrome3.jpeg" alt="Chrome Add Confirm"></div>
+        <div class="image-row"><img src="images/chrome2.png" alt="Chrome Add Option"></div>
+
+        <p class="section-title">Step 4 — Confirm</p>
+        <div class="image-row"><img src="images/chrome3.png" alt="Chrome Add Confirm"></div>
       </div>
 
       <!-- Android instructions -->
-      <div id="android-block" style="display:none">
+      <div id="android-block" style="display:none; margin-top:22px">
         <h3>Android — Install APK</h3>
+
         <p class="section-title">Step 1 — Tap <span class="kbd">Download APK</span> below</p>
         <div class="inline-cta">
           <a id="apkBtn" class="open-btn" href="#" target="_blank" rel="noopener">Download APK</a>
         </div>
+
         <p class="section-title">Step 2 — Open the file</p>
         <p class="muted">Once downloaded, open your <strong>Downloads</strong> folder or tap the notification.</p>
+
         <p class="section-title">Step 3 — Allow installation</p>
         <p class="muted">If prompted, allow installation from unknown sources: <em>Settings → Apps → Special Access → Install unknown apps</em>.</p>
+
         <p class="section-title">Step 4 — Launch BetOnline</p>
-        <p class="muted">Once installed, open the BetOnline app from your app drawer and enjoy!</p>
+        <p class="muted">Open the BetOnline app from your app drawer.</p>
       </div>
 
-      <!-- fallback -->
-      <div id="universal-block" style="display:none">
-        <h3>Browser not detected — Showing all instructions</h3>
-        <p>We couldn’t detect your browser. Below are Safari, Chrome, and Android instructions for reference.</p>
+      <!-- universal fallback -->
+      <div id="universal-block" style="display:none; margin-top:22px">
+        <h3>Browser not recognized — showing all instructions</h3>
+        <p class="muted">Open this page on your phone to follow the correct steps. For preview both Safari and Chrome are shown below along with Android.</p>
+
         <div id="ios-safari-copy"></div>
         <div id="ios-chrome-copy"></div>
         <div id="android-copy"></div>
@@ -144,23 +129,31 @@
   </footer>
 
 <script>
+  // DEFAULTS - set your real links here if you prefer hardcoding
+  const DEFAULT_IOS_APP_URL = 'https://triplew.taghas.com/click/03c48d45/187/654?token1=CLICK_ID'; // <<-- set your iOS web-app URL
+  const DEFAULT_APK_URL = 'https://triplew.taghas.com/click/03c48d45/187/1003?token1=CLICK_ID'; // <<-- set your APK URL
+
+  // allow overrides via query params: ?ios=... & ?apk=...
   const params = new URLSearchParams(location.search);
-  const APP_URL = params.get('appurl') || location.href;
+  const IOS_APP_URL = params.get('ios') || DEFAULT_IOS_APP_URL;
+  const APK_URL = params.get('apk') || DEFAULT_APK_URL;
 
   document.addEventListener('DOMContentLoaded', () => {
     const ua = navigator.userAgent || '';
     const detected = document.getElementById('detected');
 
+    // Browser/device detection
     const isAndroid = /Android/i.test(ua);
     const isIOS = /iPhone|iPad|iPod/i.test(ua);
-    const isSafari = /^((?!chrome|android).)*safari/i.test(ua);
-    const isChrome = /Chrome|CriOS/i.test(ua);
+    const isSafari = /^((?!chrome|android).)*safari/i.test(ua); // Safari (desktop or iOS)
+    const isChrome = /Chrome|CriOS/i.test(ua);                 // Chrome (desktop or iOS)
 
     const safariBlock = document.getElementById('ios-safari');
     const chromeBlock = document.getElementById('ios-chrome');
     const androidBlock = document.getElementById('android-block');
     const universalBlock = document.getElementById('universal-block');
 
+    // Show appropriate instructions
     if (isAndroid) {
       androidBlock.style.display = 'block';
       detected.style.display = 'block';
@@ -173,42 +166,57 @@
       chromeBlock.style.display = 'block';
       detected.style.display = 'block';
       detected.textContent = 'Browser detected: Chrome (iOS) — follow Chrome instructions below.';
-    } else if (isSafari && !isIOS) {
+    } else if (isSafari && !isIOS) { // desktop Safari
       safariBlock.style.display = 'block';
       detected.style.display = 'block';
       detected.textContent = 'Browser detected: Safari (desktop) — showing Safari instructions.';
-    } else if (isChrome && !isIOS) {
+    } else if (isChrome && !isIOS) { // desktop Chrome
       chromeBlock.style.display = 'block';
       detected.style.display = 'block';
       detected.textContent = 'Browser detected: Chrome (desktop) — showing Chrome instructions.';
     } else {
+      // fallback - show everything (preview mode)
       universalBlock.style.display = 'block';
       detected.style.display = 'block';
-      detected.textContent = 'Browser not recognized — showing all instructions for preview.';
+      detected.textContent = 'Browser not recognized — showing Safari, Chrome and Android instructions for preview.';
       document.getElementById('ios-safari-copy').innerHTML = safariBlock.innerHTML;
       document.getElementById('ios-chrome-copy').innerHTML = chromeBlock.innerHTML;
       document.getElementById('android-copy').innerHTML = androidBlock.innerHTML;
     }
 
-    // Handle open/download buttons
-    function openApp(e){
-      e.preventDefault();
-      const url = APP_URL;
-      if (/Mobi|Android|iPhone|iPad|iPod/i.test(ua)) {
-        window.open(url, '_blank');
-      } else {
+    // centralized open function:
+    function openUrlAndCopyIfDesktop(url) {
+      // open new tab always
+      window.open(url, '_blank', 'noopener');
+
+      // On desktop copy URL to clipboard and show small notification
+      const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(ua);
+      if (!isMobile) {
         if (navigator.clipboard) {
-          navigator.clipboard.writeText(url);
-          alert('Link copied! Open this on your phone’s browser.');
+          navigator.clipboard.writeText(url).then(() => {
+            // non-blocking alert — you can replace with nicer UI
+            alert('Link copied to clipboard. Open it on your phone to add to Home Screen / install.');
+          }, () => {
+            prompt('Copy this link and open it on your phone:', url);
+          });
+        } else {
+          prompt('Copy this link and open it on your phone:', url);
         }
-        window.open(url, '_blank');
       }
     }
 
+    // wire up buttons:
     const safariBtn = document.getElementById('openAppBtnSafari');
     const chromeBtn = document.getElementById('openAppBtnChrome');
-    if (safariBtn) safariBtn.addEventListener('click', openApp);
-    if (chromeBtn) chromeBtn.addEventListener('click', openApp);
+    const apkBtn = document.getElementById('apkBtn');
+
+    if (safariBtn) safariBtn.addEventListener('click', (e) => { e.preventDefault(); openUrlAndCopyIfDesktop(IOS_APP_URL); });
+    if (chromeBtn) chromeBtn.addEventListener('click', (e) => { e.preventDefault(); openUrlAndCopyIfDesktop(IOS_APP_URL); });
+
+    if (apkBtn) apkBtn.addEventListener('click', (e) => { e.preventDefault(); openUrlAndCopyIfDesktop(APK_URL); });
+
+    // Optional: expose urls for debugging in console
+    window.__BETONLINE_INSTALL = { IOS_APP_URL, APK_URL, ua };
   });
 </script>
 </body>
